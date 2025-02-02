@@ -14,15 +14,13 @@ body {
   background-attachment: fixed;
   
 }
-@font-face {
-  font-family: 'DogicaPixelRegular';
-  src: url('https://fontlibrary.org/en/font/dogica') format('woff2');
-  font-weight: normal;
-  font-style: normal;
+h1 {
+  h1 {
+  font-family: 'RaseGPLOutlineRegular';
+   font-weight: normal;
+   font-style: normal;
 }
 
-h1 {
-  font-family: 'DogicaPixelRegular';
 }
 
 #content {
