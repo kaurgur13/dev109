@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rhombus Generator</title>
+  <style>
+    /* CSS componennt for symbol colors */
+    .red {
+      color: red;
+    }
+
+    .green {
+      color: rgb(0, 128, 15);
+    }
+
+    .blue {
+      color: rgb(0, 0, 255);
+    }
+
+    .orange {
+      color: rgb(255, 183, 0);
+    }
+
+    .purple {
+      color: rgb(87, 1, 167);
+    }
+
+    .pink {
+      color: rgb(250, 145, 187);
+    }
+
+    .rhombus-container {
+      /* CSS component for rhombus container */
+      display: flex;
+      justify-content: center;
+      /* center horizontally */
+      flex-direction: column;
+      /* column */
+      align-items: center;
+      /* center vertically */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Rhombus Generator - Gurkirat Kaur</h1>
+  <label>What is the size of the Rhombus?</label>
+  <input type="number" id="rHeight" min="1" value="5" required><br><br> <!-- input for rhombus height -->
+
+  <label>Choose color for Even position:</label> <!-- even color options-->
+  <select id="colorEven">
+    <option value="orange">Orange</option>
+    <option value="purple">Purple</option>
+    <option value="pink">Pink</option>
+  </select><br><br>
+  <label>Choose color for Odd position:</label> <!-- label for color selection -->
+
+  <select id="colorOdd"> <!-- odd color optionss -->
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+  </select>
+  <br><br>
+
+  <label>Choose symbol:</label> <!-- symbol options -->
+  <select id="symbol">
+    <option value="*">*</option>
+    <option value="#">#</option>
+    <option value="$">$</option>
+    <option value="%">%</option>
+    <option value="@">@</option>
+  </select>
+  <br><br>
+
+  <button onclick="createRhombus()">Generate Rhombus</button> <!-- button for generating the  rhombus -->
+  <div id="rhombusOutput" class="rhombus-container"></div> <!--output container -->
+
+  <script src="script.js"></script>
+</body>
+
+</html>
