@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="My Awesome Portfolio" />
+  <meta name="keywords" content="portfolio, web development, projects" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Portfolio</title>
+</head>
+<body>
+  <div id="wrap">
+
+    <!-- Header Section -->
+    <div id="header">
+      <h1>Gurkirat's Portfolio</h1>
+
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="artifacts.html">Artifacts</a></li>
+        <li><a href="modules.html">Modules</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="creative.html">Creative</a></li>
+        <li><a href="validated.html">Validated</a></li>
+      </ul>
+    </nav>
+
+ 
+    <!-- Contact Form -->
+    <div class="form-container">
+      <form action="thankyou.html" method="get" name="myContact" onsubmit="return validateForm()">
+        <p>
+          <label for="name"><strong>Your Name:</strong></label><br>
+          <input type="text" id="name" name="name" required />
+        </p>
+
+        <p>
+          <label for="email"><strong>Your Email:</strong></label><br>
+          <input type="email" id="email" name="email" required />
+        </p>
+
+        <p>
+          <label for="message"><strong>Your Message:</strong></label><br>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Send Message</button>
+        </p>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
