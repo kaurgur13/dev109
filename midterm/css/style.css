@@ -1,0 +1,77 @@
+/*  */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ddece9;
+  color: #00473c;
+}
+
+
+#header { /* Header */
+  text-align: center;
+  background-color: #00473c;
+  color: white;
+  padding: 20px 0;
+}
+
+#header h1 {
+  font-size: 40px;
+  margin: 0;
+}
+
+#header h2 {
+  font-size: 25 px;
+  margin-top: 10px;
+}
+
+
+nav ul { /* Nav Menu */
+  text-align: center;
+  background-color: #006435;
+  margin: 0;
+}
+
+nav ul li {  
+  display: inline-block; /* list items horizontally */
+  
+}
+ /*  */
+nav ul li a { 
+  color: white; /* white text */
+  text-decoration: none; /* remove underline */
+  font-size: 22px; /* font size */ 
+  padding: 10px 20px; /* padding */
+}
+
+nav ul li a:hover {
+  background-color: #013712; /* colour when user covers over nav bar */
+}
+
+
+#content { 
+  margin: 30px 0; /* margin */
+  text-align: center; 
+}
+
+ h2 { /*  */
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.6 ;
+  margin-top: 10px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*  form container for contact page */
+.form-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 10px;  
+}
