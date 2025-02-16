@@ -21,7 +21,7 @@ body {
 }
 
 #header h2 {
-  font-size: 25 px;
+
   margin-top: 10px;
 }
 
@@ -55,7 +55,7 @@ nav ul li a:hover {
 }
 
  h2 { /*  */
-  font-size: 2rem;
+  font-size: 20px;
   color: #333;
 }
 
