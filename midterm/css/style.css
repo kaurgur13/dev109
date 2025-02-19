@@ -75,3 +75,9 @@ p {
   align-items: center; 
   margin-top: 10px;  
 }
+
+.artifact-link { /* artifact link formatting*/
+  display: block; 
+  margin-top: 10px;
+  color: #006435;
+}
