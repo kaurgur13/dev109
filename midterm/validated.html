@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Portfolio</title>
 </head>
+
 <body>
   <div id="wrap">
 
     <div id="header">
       <h1>Gurkirat's Portfolio</h1>
-   
     </div>
 
     <nav>
@@ -26,28 +27,30 @@
       </ul>
     </nav>
 
-    <div id="content">
-      <h2>Validation Results</h2>
-      <p>Below are the validation results for my HTML and CSS files. Each page has been tested and confirmed to have zero errors.</p>
+    <div id="validation-container">
+      <!-- HTML Validation Section (Left) -->
+      <div class="column" id="html-validation">
+        <h3>HTML Validation</h3>
+        <div class="validation-images">
+          <img src="images/html.png" alt="HTML Validation Screenshot 1" width="500">
+          <img src="images/aboutMeHtml.png" alt="HTML Validation Screenshot 2" width="500">
+          <img src="images/coursesHtml.png" alt="HTML Validation Screenshot 3" width="500">
+          <img src="images/artifactsHtml.png" alt="HTML Validation Screenshot 3" width="500">
+          <img src="images/modulesHtml.png" alt="HTML Validation Screenshot 3" width="500">
+          <img src="images/contactHtml.png" alt="HTML Validation Screenshot 3" width="500">
+          <img src="images/creativeHtml.png" alt="HTML Validation Screenshot 3" width="500">
+          <img src="images/validatedhtml.png" alt="HTML Validation Screenshot 3" width="500">
+        </div>
+      </div>
 
-      <div id="validation-container">
-        <!-- HTML -->
-        <div id="validation">
-          <h3>HTML Validation</h3>
-          <div class="validation-item">
-            <img src="images/html.png" alt="Index Page HTML Validation" width="800" height="auto"/>
-          </div>
-          <!-- css -->
-          <div class="validation">
-            <h3>CSS Validation</h3>
-            <img src="images/css.png" alt="About Page HTML Validation" width="800" height="auto"/>
-          </div>
-          
+      <!-- CSS Validation Section (Right) -->
+      <div class="column" id="css-validation">
+        <h3>CSS Validation</h3>
+        <img src="images/css.png" alt="CSS Validation Screenshot" width="500">
+      </div>
+    </div>
 
-      </div> 
-      
-    </div> 
-
-  </div> 
+  </div>
 </body>
+
 </html>
