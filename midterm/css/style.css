@@ -1,14 +1,21 @@
-/*  */
-body {
-  font-family: Arial, sans-serif;
+/* */
+* {
   margin: 0;
   padding: 0;
-  background-color: #ddece9;
-  color: #00473c;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
+/* Body Styling */
+body {
+  background-color: #ddece9;
+  color: #00473c;
+  line-height: 1.6;
+  text-align: center;
+}
 
-#header { /* Header */
+/* Header */
+#header {
   text-align: center;
   background-color: #00473c;
   color: white;
@@ -16,68 +23,181 @@ body {
 }
 
 #header h1 {
-  font-size: 40px;
+  font-size: 45px;
   margin: 0;
+  letter-spacing: 2px;
 }
 
 #header h2 {
-
-  margin-top: 10px;
+  margin-top: 5px;
+  font-size: 24px;
+  opacity: 0.8;
 }
 
-
-nav ul { /* Nav Menu */
+/* Navigation bar */
+nav ul {
   text-align: center;
   background-color: #006435;
-  margin: 0;
+  padding: 15px 0;
+  border-radius: 0; /* Ensures no rounding */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Adds space below the navbar */
 }
 
-nav ul li {  
-  display: inline-block; /* list items horizontally */
-  
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
 }
- /*  */
-nav ul li a { 
-  color: white; /* white text */
-  text-decoration: none; /* remove underline */
-  font-size: 22px; /* font size */ 
-  padding: 10px 20px; /* padding */
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 12px 18px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0; /* Ensures no rounding on links */
 }
 
 nav ul li a:hover {
-  background-color: #013712; /* colour when user covers over nav bar */
+  background-color: #013712;
+  transform: scale(1.05);
 }
 
-
-#content { 
-  margin: 30px 0; /* margin */
-  text-align: center; 
+/* Main Content  */
+#content {
+  margin: 40px auto;
+  text-align: center;
+  max-width: 900px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
- h2 { /*  */
-  font-size: 20px;
-  color: #333;
+h2 {
+  font-size: 24px;
+  color: #006435;
+  border-bottom: 2px solid #006435;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
+
 
 p {
-  font-size: 22px;
-  line-height: 1.6 ;
-  margin-top: 10px;
+  font-size: 20px;
+  margin-bottom: 15px;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
-
-/*  form container for contact page */
+/*contact page*/
+/* Form Container */
 .form-container {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  margin-top: 10px;  
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; 
 }
 
-.artifact-link { /* artifact link formatting*/
-  display: block; 
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 400px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: #013712;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* validation page */
+
+#validation-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Validation images  */
+.validation-images {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.validation-images img {
+  max-width: 100%; /* image fits container */
+  height: auto; 
+}
+
+
+h3 {
+  font-size: 24px;
+  color: #006435;
+  text-align: center;
+  
+}
+
+/*Artifcats page*/
+
+/*Links */
+.artifact-link {
+  display: block;
   margin-top: 10px;
   color: #006435;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.artifact-link:hover {
+  color: #013712;
+  text-decoration: underline;
+}
+
+/* Responsive Design for different screens */
+@media (max-width: 768px) {
+  #content,
+  #validation-container {
+      width: 90%;
+  }
+  
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+      border-radius: 0; /* Ensures no rounding */
+  }
+}
+
+/* Module Page Styles */
+.module-content {
+  display: flex; 
+  flex-direction: column; /* stacks image and text vertically */
+  align-items: center; 
+}
+
+.module-content a {
+  order: 1; /* Move the link to appear after the image */
+  color: #006435; /* Link color */
+}
+
+.module-content img {
+  margin-bottom: 15px; /* Space between link and image */
 }
