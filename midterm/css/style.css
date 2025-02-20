@@ -1,4 +1,4 @@
-/* */
+/* General */
 * {
   margin: 0;
   padding: 0;
@@ -121,12 +121,11 @@ button {
 }
 
 /* validation page */
-
 #validation-container {
   display: flex;
   align-items: flex-start;
   gap: 50px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
   background: white;
