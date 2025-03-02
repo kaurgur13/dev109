@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 08 Assignment</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to the CSS file -->
+</head>
+
+<body>
+    <div id="page">
+        <h1 id="header"> <img src="images/kinglogo.png" alt="Grocery List Logo"> <!--logo img-->
+
+        </h1>
+        <h2>Buy groceries</h2>
+        <ul id="todo">
+            <li class="hot"><em>fresh</em> figs</li>
+            <li class="hot">pine nuts</li>
+            <li class="hot">honey</li>
+            <li>balsamic vinegar</li>
+        </ul>
+        <div id="input-container">
+            <input type="text" id="itemInput" placeholder="Enter an item"> <!--user input-->
+            <button onclick="addItem()">Add New Grocery Item</button> <!--button to add item-->
+        </div>
+    </div>
+
+    <script src="js/script.js"></script> <!-- Link to the js file -->
+</body>
+
+</html>
