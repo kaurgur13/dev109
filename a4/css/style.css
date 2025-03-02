@@ -1,0 +1,95 @@
+/* page background and font */
+body {
+  background: #043113;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1{
+  text-align: center;
+}
+
+/* Form container */
+form {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #deede0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;  
+}
+
+/* Form labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+input, select {
+  width: 98%;
+  padding: 10px;  
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;  
+}
+
+/* Submit button */
+button[type="submit"] {
+  background: #5cb85c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 12px 20px; 
+  margin-top: 15px;
+  border-radius: 5px;
+  font-size: 16px;  
+  display: block;   
+  margin-left: auto;  
+  margin-right: auto; 
+}
+
+/* Error messages */
+.warning {
+  color: red;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 14px; 
+}
+
+/*  Thank You Page */
+.thank-you-container {
+  text-align: center;
+  width: 50%;
+  margin: 10% auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+}
+
+.thank-you-container h1 {
+  color: #28a745;
+}
+
+/**/
+.thank-you-container p {
+  font-size: 20px;
+  color:#043113;
+}
+
+/*Home button styling*/
+.homeButton{
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px; 
+}
+
