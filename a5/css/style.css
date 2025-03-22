@@ -120,6 +120,11 @@ button:hover {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(255, 0, 0, 0.6);
+  position: absolute;
+  top: 4px;
+  left: calc(25% - 180px); /* puts the auto advance button to teh right*/
+  transform: translateX(0);
+  
   
 }
 
