@@ -63,6 +63,7 @@ function resetTimer() { // reset the timer
     interval = setInterval(autoSlide, 1000); // call autoSlide every second
   } else {
     timerDisplay.textContent = "Auto-advance: OFF"; // show OFF if auto-advance is off
+    document.querySelector(".auto-toggle").style.left = "calc(30% - 180px)"; // Adjust position of button when timer is off
   }
 }
 toggleAutoAdvance.addEventListener("change", (event) => { //toggle auto advance
