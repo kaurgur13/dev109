@@ -89,7 +89,7 @@ button {
   z-index: 10;
 }
 
-/* Button when hover*/
+/* Button Hover*/
 button:hover {
   background: #cc0000; 
 }
@@ -109,3 +109,17 @@ button:hover {
   transform: translateX(-50%);
   text-align: center;
 }
+
+.auto-toggle { /* Auto toggle button */
+  margin: 15px 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  background-color: #ff0000;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.6);
+  
+}
+
