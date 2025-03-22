@@ -14,6 +14,7 @@ const images = [ //image array
 let currentIndex = 0; //slideshow index
 let timer = 4; //slideshow timer 
 let interval; //repeats function after interval 
+let autoAdvance = true; //auto advance slides
 
 //DOM elemnts 
 const slideImage = document.getElementById("slideImage"); 
@@ -21,6 +22,7 @@ const imageDescription = document.getElementById("imageDescription");
 const timerDisplay = document.getElementById("timer");
 const previousBtn = document.getElementById("previousBtn");
 const nextBtn = document.getElementById("nextBtn");
+const toggleAutoAdvance = document.getElementById("autoToggle");
 
 function updateSlide() { //updating image and description 
   slideImage.src = images[currentIndex].src;
@@ -40,21 +42,34 @@ function prevSlide() { //button, goes to the previous image and description (sli
   updateSlide();
 }
 
-function resetTimer() { //timer is reset 
-  clearInterval(interval); 
-  timer = 4;
-  interval = setInterval(autoSlide, 1000);
+function autoSlide() { // when timer is up, go to next slide 
+  if (timer === 0) {
+    nextSlide(); // go to the next slide
+    timer = 4; // reset timer to 4 seconds
+  } else {
+    timer--; // countdown the timer
+  }
+
+  // Update the timer display
+  timerDisplay.textContent = `Timer: ${timer}s`;
 }
 
-function autoSlide() { //when timer is up, go to next slide 
-  if (timer === 0) {
-      nextSlide();
-      timer = 4;
+function resetTimer() { // reset the timer
+  clearInterval(interval); // clear any previous interval
+  timer = 4; // reset the timer to 4 seconds
+  timerDisplay.textContent = `Timer: ${timer}s`; // update the timer display
+
+  if (autoAdvance) { // if auto-advance is enabled, restart the interval
+    interval = setInterval(autoSlide, 1000); // call autoSlide every second
   } else {
-      timer--;
+    timerDisplay.textContent = "Auto-advance: OFF"; // show OFF if auto-advance is off
   }
-  timerDisplay.textContent = `Timer: ${timer}s`; //update timer display 
 }
+toggleAutoAdvance.addEventListener("change", (event) => { //toggle auto advance
+  autoAdvance = event.target.checked;
+  resetTimer();
+});
+
 
 //button event listeners 
 previousBtn.addEventListener("click", prevSlide); 
